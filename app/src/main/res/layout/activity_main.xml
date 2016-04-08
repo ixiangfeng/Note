@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <!--Toolbar-->
+    <include layout="@layout/main_toolbar_layout" />
+    <!--DrawerLayout-->
+    <include layout="@layout/main_drawerlayout_layout" />
+</LinearLayout>

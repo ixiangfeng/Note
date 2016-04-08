@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.cxh.note.widget.CustomRadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="首页"
+            app:defaultImg="@mipmap/home_default"
+            app:selectImg="@mipmap/home_pressed" />
+
+        <com.cxh.note.widget.CustomRadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="客户"
+            app:defaultImg="@mipmap/customer_default"
+            app:selectImg="@mipmap/customer_pressed" />
+
+        <com.cxh.note.widget.CustomRadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="报表"
+            app:defaultImg="@mipmap/report_default"
+            app:selectImg="@mipmap/report_pressed" />
+
+        <com.cxh.note.widget.CustomRadioButton
+            android:id="@+id/rb4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置"
+            app:defaultImg="@mipmap/set_default"
+            app:selectImg="@mipmap/set_pressed" />
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg" />
+
+
+</RelativeLayout>

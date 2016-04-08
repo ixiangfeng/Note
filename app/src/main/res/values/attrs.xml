@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomRadioButton" >
+        <attr name="defaultImg" format="reference" />
+        <attr name="selectImg" format="reference" />
+        </declare-styleable>
+</resources>
